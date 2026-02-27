@@ -205,7 +205,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
             `┌⭓ Riprova tra poco\n` +
             `├⭓ Riduci il testo o semplifica\n` +
             `└⭓ Contatta lo staff con *.staff*\n\n` +
-            `> *vare ✧ bot*`
+            `> *𝐙𝚬𝑌𝐍𝟎 𝐁𝐎𝐓*`
         )
     }
 }
