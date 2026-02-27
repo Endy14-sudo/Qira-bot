@@ -4,7 +4,7 @@ const defaultMenu = {
   header: 'ㅤㅤ⋆｡˚『 ╭ \`MENU CREATORE\` ╯ 』˚｡⋆\n╭',
   body: '│ ➤『🕊️』 %cmd',
   footer: '*╰⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*\n',
-  after: `> 🩸 𓆩⟡𓆪 𝙫𝙖𝙧𝙚𝙗𝙤𝙩 𓆩⟡𓆪`,                   
+  after: `> 🩸 𓆩⟡𓆪 𝐙𝚬𝑌𝐍𝟎 𝐁𝐎𝐓 𓆩⟡𓆪`,                   
 }
 const handler = async (m, { conn, usedPrefix: _p }) => {
   const tags = { 'creatore': 'MenuOwner' }
