@@ -1,24 +1,69 @@
-let handler = async (m, { conn, text, command }) => {
-  if (!text) return m.reply('🍭 *Inserisci il @tag di un utente.*');
-  let who;
-  if (m.isGroup) who = m.mentionedJid[0];
-  else who = m.chat;
-  if (!who) return m.reply('紗 *Inserisci il @tag di un utente.*');
-  let users = global.db.data.users;
-  users[who] = users[who] || {};
+let handler = async (m, { conn, command }) => {
+  // Identifica l'utente da menzione o citazione
+  let who
 
-  if (command === 'banuser') {
-    users[who].banned = true;
-    conn.reply(m.chat, `✨ *L\'utente @${who.split('@')[0]} è stato bannato con successo.*`, fkontak, { mentions: [who] });
-  } else if (command === 'unbanuser') {
-    users[who].banned = false;
-    conn.reply(m.chat, `✨ *L\'utente @${who.split('@')[0]} è stato sbannato con successo.*`, fkontak, { mentions: [who] });
+  if (m.isGroup)
+    who = m.mentionedJid[0]
+      ? m.mentionedJid[0]
+      : m.quoted
+      ? m.quoted.sender
+      : null
+  else who = m.chat
+
+  if (!who) return m.reply('⚠️ Per favore, tagga un utente.')
+
+  // Crea l'oggetto utente se non esiste
+  if (!global.db.data.users[who]) global.db.data.users[who] = {}
+
+  let user = global.db.data.users[who]
+
+  // Funzione helper per abbellire il messaggio
+  const fancyReply = async (text) => {
+    await conn.reply(
+      m.chat,
+      `═══════════════\n${text}\n═══════════════`,
+      m,
+      { mentions: [who] }
+    )
   }
-};
 
-handler.help = ['banuser <@tag>', 'unbanuser <@tag>'];
-handler.command = ['banuser', 'unbanuser'];
-handler.tags = ['creatore'];
-handler.mods = true;
+  // ================= BAN DAL BOT =================
+  if (command === 'banuser') {
+    if (user.banned) return fancyReply('ℹ️ Utente già *bannato dal bot*.')
+
+    user.banned = true
+
+    await fancyReply(
+      `⛔ @${who.split('@')[0]} è stato *BANNATO DAL BOT*\n❌ Non potrà più usare i comandi del bot.`
+    )
+  }
+
+  // ================= UNBAN DAL BOT =================
+  if (command === 'unbanuser') {
+    if (!user.banned) return fancyReply('ℹ️ Utente non è bannato.')
+
+    user.banned = false
+
+    await fancyReply(
+      `✅ @${who.split('@')[0]} è stato *SBANNATO DAL BOT*\n✔️ Ora può usare di nuovo i comandi.`
+    )
+  }
+}
+
+// Impostazioni del comando
+handler.help = ['banuser', 'unbanuser']
+handler.command = ['muori', 'vivi']
 handler.owner = true;
-export default handler;
+
+// ================= MIDDLEWARE =================
+// Blocca i comandi per utenti bannati
+handler.before = async function (m) {
+  if (!m.text) return true
+  let user = global.db.data.users[m.sender]
+  if (user?.banned && m.text.startsWith('.')) {
+    return false // Blocca comando
+  }
+  return true
+}
+
+export default handler
