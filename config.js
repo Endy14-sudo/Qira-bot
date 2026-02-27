@@ -25,12 +25,12 @@ global.prems = ['393514357738', '393511082922', '212614769337']
 
 /*⭑⭒━━━✦❘༻🩸 INFO BOT 🕊️༺❘✦━━━⭒⭑*/
 
-global.nomepack = 'vare ✧ bot'
-global.nomebot = '✧˚🩸 varebot 🕊️˚✧'
-global.wm = 'vare ✧ bot'
-global.autore = 'SⒶ𝔪'
-global.dev = '⋆｡˚- SⒶ𝔪'
-global.testobot = `༻⋆⁺₊𝓿𝓪𝓻𝓮𝓫𝓸𝓽₊⁺⋆༺`
+global.nomepack = '𝐙𝚬𝑌𝐍𝟎 𝚩𝚯𝚃'
+global.nomebot = '𝐙𝚬𝑌𝐍𝟎 𝚩𝚯𝚃'
+global.wm = '𝐙𝚬𝑌𝐍𝟎 𝚩𝚯𝚃'
+global.autore = '乇几ᗪㄚ'
+global.dev = '乇几ᗪㄚ'
+global.testobot = `ꫀꪀᦔ-᥇ꪮꪻ`
 global.versione = pkg.version
 global.errore = '⚠️ *Errore inatteso!* Usa il comando `.segnala <errore>` per avvisare lo sviluppatore.'
 
