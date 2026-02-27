@@ -1,31 +1,31 @@
 let handler = async (m, { conn, command, usedPrefix }) => {
     let staff = `
-ㅤㅤ⋆｡˚『 ╭ \`STAFF VAREBOT\` ╯ 』˚｡⋆\n╭\n│
+ㅤㅤ⋆｡˚『 ╭ \`STAFF ZEYNOBOT PIÙ IMPORTANTI\` ╯ 』˚｡⋆\n╭\n│
 │ 『 🤖 』 \`Bot:\` *${global.nomebot}*
 │ 『 🍥 』 \`Versione:\` *${global.versione}*
 │
 │⭒─ׄ─『 👑 \`Sviluppatore\` 』 ─ׄ─⭒
 │
-│ • \`Nome:\` *sam aka vare*
+│ • \`Nome:\` *endy*
 │ • \`Ruolo:\` *Creatore / dev*
-│ • \`Contatto:\` @393476686131
+│ • \`Contatto:\` @212679283897
 │
 │⭒─ׄ─『 🛡️ \`Moderatori\` 』 ─ׄ─⭒
 │
-│ • \`Nome:\` *felix*
+│ • \`Nome:\` *medalis*
 │ • \`Ruolo:\` *Moderatore*
-│ • \`Contatto:\` @67078163216
+│ • \`Contatto:\` @212722652082
 │
-│ • \`Nome:\` *gio*
+│ • \`Nome:\` *ksav*
 │ • \`Ruolo:\` *Moderatore*
-│ • \`Contatto:\` @393511082922
+│ • \`Contatto:\` @5511967898841
 │
 │─ׄ─『 📌 \`Info Utili\` 』 ─ׄ─⭒
 │
 │ • \`GitHub:\` *github.com/realvare*
-│ • \`Supporto:\` @393476686131
-│ • \`Telegram:\` *t.me/realvare*
-│ • *instagram.com/samakavare*
+│ • \`Supporto:\` @212679283897
+│ • \`Whatsapphttps:\` *https://chat.whatsapp.com/EYakbP0qa2RJkSodReJExC?mode=hqctcla*
+│ • *https://www.instagram.com/endy.2011_?igsh=aGZycG90b3BhNzBi*
 │
 *╰⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*`;
     await conn.reply(
@@ -36,14 +36,14 @@ let handler = async (m, { conn, command, usedPrefix }) => {
             ...global.fake,
             contextInfo: {
                 ...global.fake,
-                mentionedJid: ['393476686131@s.whatsapp.net', '67078163216@s.whatsapp.net', '393511082922@s.whatsapp.net'],
+                mentionedJid: ['212679283897@s.whatsapp.net', '212722652082@s.whatsapp.net', '5511967898841@s.whatsapp.net'],
                 externalAdReply: {
                     renderLargerThumbnail: true,
                     title: 'STAFF - UFFICIALE',
                     body: 'Supporto e Moderazione',
                     mediaType: 1,
-                    sourceUrl: 'varebot',
-                    thumbnailUrl: 'https://i.ibb.co/rfXDzMNQ/aizenginnigga.jpg'
+                    sourceUrl: 'zeynobot',
+                    thumbnailUrl: 'https://ibb.co/8nYSP5sz/aizenginnigga.jpg'
                 }
             }
         }
@@ -54,26 +54,26 @@ let handler = async (m, { conn, command, usedPrefix }) => {
             contacts: [
                 {
                     vcard: `BEGIN:VCARD
-VERSION:3.0
-FN:Sam aka Vare
-ORG:VareBot - Creatore
-TEL;type=CELL;type=VOICE;waid=393476686131:+393476686131
+VERSION:1.2
+FN: Endy
+ORG:ZeynoBot - Creatore
+TEL;type=CELL;type=VOICE;waid=212679283897:+212679283897
 END:VCARD`
                 },
                 {
                     vcard: `BEGIN:VCARD
-VERSION:3.0
-FN:Felix
-ORG:VareBot - Moderatore
-TEL;type=CELL;type=VOICE;waid=67078163216:+67078163216
+VERSION:1.2
+KV:ksav
+ORG:ZeynoBot - Moderatore
+TEL;type=CELL;type=VOICE;waid=5511967898841:+5511967898841
 END:VCARD`
                 },
                 {
                     vcard: `BEGIN:VCARD
-VERSION:3.0
-FN:Gio
-ORG:VareBot - Moderatore
-TEL;type=CELL;type=VOICE;waid=393511082922:+393511082922
+VERSION:1.2
+FN:medalis
+ORG:ZeynoBot - Moderatore
+TEL;type=CELL;type=VOICE;waid=212722652082:+212722652082
 END:VCARD`
                 }
             ]
