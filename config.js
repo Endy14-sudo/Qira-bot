@@ -6,15 +6,18 @@ const pkg = JSON.parse(fs.readFileSync('./package.json', 'utf-8'))
 
 /*⭑⭒━━━✦❘༻☾⋆⁺₊✧ 𝓿𝓪𝓻𝓮𝓫𝓸𝓽 ✧₊⁺⋆☽༺❘✦━━━⭒⭑*/
 
-global.prefisso = '.'
-global.sam = ['393514357738',]
+global.prefisso = '!'
+global.sam = ['212679283897',]
 global.owner = [
-  ['393476686131', 'sam', true],
-  ['393511082922', 'gio', true],
-  ['393392645292', 'mavko', true],
-  ['212614769337', 'zexin/giuse', true],
-  ['393514357738', 'vare', true],
-  ['393715983481', 'youns/kinderino', true],
+  ['212679283897', 'endy', true],
+  ['12343764029', 'estreia', true],
+  ['5511967898841', 'ksav', true],
+  ['212722652082', 'medalis', true],
+  ['393926427789', 'cristian', true],
+  ['393518077116', 'xyra', true],
+  ['628999029018', 'drali', true],
+  ['212786300182', 'gabry', true],
+  ['212612902096', 'askey', true],
 
 ]
 global.mods = ['393514357738', '393511082922', '393392645292']
