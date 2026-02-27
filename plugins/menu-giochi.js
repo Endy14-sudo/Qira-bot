@@ -33,7 +33,7 @@ const handler = async (m, { conn, usedPrefix: _p }) => {
     ].join('\n') 
 
  conn.sendMessage(m.chat, {
-    image: fs.readFileSync('./media/menu/fef57f71614734dcc35d539035333972.jpep'),
+    image: fs.readFileSync('./media/menu/fef57f71614734dcc35d539035333972.jpg'),
     caption: text.trim(),
     ...fake,
     contextInfo: {
