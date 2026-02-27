@@ -171,7 +171,7 @@ let handler = async (m, { conn, args, participants, isOwner }) => {
             ${columnsHtml}
         </div>
 
-        <div class="footer">${isOwner ? 'VARE ✧ BOT' : 'VARE ❀ BOT'}</div>
+        <div class="footer">${isOwner ? '𝐙𝚬𝑌𝐍𝟎 𝚩𝚯𝚃' : '𝐙𝚬𝑌𝐍𝟎 𝚩𝚯𝚃'}</div>
     </body>
     </html>`
 
@@ -189,7 +189,7 @@ let handler = async (m, { conn, args, participants, isOwner }) => {
 • ⭐ *Exp:* ${playerPos.exp}/${users.length}
 • 📈 *Livello:* ${playerPos.level}/${users.length}
 
-${isOwner ? '> vare ✧ bot' : '> vare ❀ bot'}`
+${isOwner ? '> 𝐙𝚬𝑌𝐍𝟎 𝚩𝚯𝚃' : '> 𝐙𝚬𝑌𝐍𝟎 𝚩𝚯𝚃'}`
 
         await conn.sendMessage(m.chat, {
             image: Buffer.from(responseImg.data),
