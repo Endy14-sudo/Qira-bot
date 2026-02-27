@@ -27,7 +27,7 @@ export async function before(m, { conn, groupMetadata }) {
 
   const type = m.messageStubType;
   let ppBuffer;
-  const vareb0t = 'https://i.ibb.co/hJW7WwxV/varebot.jpg';
+  const zeynob0t = 'https://ibb.co/hFhH44MP/zeynobot.jpg';
 
   try {
     const ppUrl = await conn.profilePictureUrl(m.chat, 'image');
@@ -39,18 +39,18 @@ export async function before(m, { conn, groupMetadata }) {
       ppBuffer = Buffer.alloc(0);
     }
   }
-  const nomegp = groupMetadata.subject || 'vare ✧ bot';
+  const nomegp = groupMetadata.subject || 'Zeyno Bot';
   const am = {
-    21: 'NOME GRUPPO MODIFICATO',
-    22: 'IMMAGINE GRUPPO MODIFICATA',
-    23: 'LINK GRUPPO REIMPOSTATO',
-    25: 'PERMESSI GRUPPO MODIFICATI',
+    21: 'NOME GRUPPO MODIFICATO PER FORTUNA',
+    22: 'IMMAGINE GRUPPO MODIFICATA E NEL DUBBIO MI MANCA ESTREIA',
+    23: 'LINK GRUPPO REIMPOSTATO PER LA SICUREZZA',
+    25: 'PERMESSI GRUPPO MODIFICATI FINALMENTE',
     26: 'STATO GRUPPO MODIFICATO',
-    29: 'NUOVO ADMIN PROMOSSO',
-    30: 'ADMIN RETROCESSO'
+    29: 'ADMIN PROMOSSO',
+    30: 'ADMIN BOCCIATO'
   };
 
-  const varebot = {
+  const zeynoebot = {
     21: `ㅤㅤ⋆｡˚『 ╭ \`NOME GRUPPO\` ╯ 』˚｡⋆\n╭  \n│ 『 👤 』 \`Da:\` *${utente}*\n│ 『 🏷️ 』 \`Nuovo nome:\` *${nomegp || 'sconosciuto'}*\n*╰⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*`,
     22: `ㅤㅤ⋆｡˚『 ╭ \`IMMAGINE GRUPPO\` ╯ 』˚｡⋆\n╭  \n│ 『 👤 』 \`Da:\` *${utente}*\n*╰⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*`,
     23: `ㅤㅤ⋆｡˚『 ╭ \`LINK REIMPOSTATO\` ╯ 』˚｡⋆\n╭  \n│ 『 👤 』 \`Da:\` *${utente}*\n│ 『 📎 』 \`Stato:\` *Il link del gruppo aggiornato*\n*╰⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*`,
@@ -60,7 +60,7 @@ export async function before(m, { conn, groupMetadata }) {
     30: `ㅤㅤ⋆｡˚『 ╭ \`ADMIN RETROCESSO\` ╯ 』˚｡⋆\n╭  \n│ 『 👤 』 \`A:\` *${formattedParam0}*\n│ 『 🛠️ 』 \`Da:\` *${utente}*\n*╰⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*`
   };
 
-  if (global.db.data.chats[m.chat].rileva && varebot[type]) {
+  if (global.db.data.chats[m.chat].rileva && zeynoebot[type]) {
     const azione = am[type] || 'EVENTO GRUPPO';
     const contextInfo = {
       ...global.fake.contextInfo || {},
@@ -82,7 +82,7 @@ export async function before(m, { conn, groupMetadata }) {
     contextInfo.mentionedJid = mentions;
 
     await conn.sendMessage(m.chat, {
-      text: varebot[type],
+      text: zeynobot[type],
       contextInfo
     });
   }
