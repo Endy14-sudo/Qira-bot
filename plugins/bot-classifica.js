@@ -40,7 +40,7 @@ let handler = async (m, { conn, args, participants, isOwner }) => {
             try { 
                 pp = await conn.profilePictureUrl(user.jid, 'image') 
             } catch { 
-                pp = 'https://i.ibb.co/BKHtdBNp/default-avatar-profile-icon-1280x1280.jpg' 
+                pp = 'https://ibb.co/ZRv6BrsV/default-avatar-profile-icon-1280x1280.jpg' 
             }
             const name = (user.name || user.jid.split('@')[0]).substring(0, 10)
             const medal = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : `${i + 1}°`
