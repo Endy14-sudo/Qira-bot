@@ -134,7 +134,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
             }
 
             const descrizione = fullDesc.slice(0, 400) + (fullDesc.length > 400 ? '..' : '')
-            let imageUrl = 'https://i.ibb.co/hJW7WwxV/varebot.jpg';
+            let imageUrl = 'https://ibb.co/hFhH44MP/zeynobot.jpg';
             const articleImage = await getArticleImage(art.link);
             if (articleImage && !articleImage.includes('google')) {
                 imageUrl = articleImage;
