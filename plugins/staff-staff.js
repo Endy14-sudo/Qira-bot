@@ -22,7 +22,7 @@ let handler = async (m, { conn, command, usedPrefix }) => {
 │
 │─ׄ─『 📌 \`Info Utili\` 』 ─ׄ─⭒
 │
-│ • \`GitHub:\` *github.com/realvare*
+│ • \`GitHub:\` *https://github.com/Endy14-sudo*
 │ • \`Supporto:\` @212679283897
 │ • \`Whatsapphttps:\` *https://chat.whatsapp.com/EYakbP0qa2RJkSodReJExC?mode=hqctcla*
 │ • *https://www.instagram.com/endy.2011_?igsh=aGZycG90b3BhNzBi*
