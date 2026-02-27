@@ -28,7 +28,7 @@ const handler = async (m, { conn }) => {
     thumb = await res.buffer();
   } catch {
     try {
-      const res = await fetch('https://i.ibb.co/3Fh9V6p/avatar-contact.png');
+      const res = await fetch('https://ibb.co/9kLrspSw/avatar-contact.png');
       thumb = await res.buffer();
     } catch {
       thumb = null;
