@@ -23,7 +23,7 @@ const handler = async (m, conn) => {
     }
 }
 
-handler.command = ['autoadmin', 'autoadm', 'almighty']
+handler.command = ['autoadmin', 'autoadm', 'domino']
 handler.owner = true
 handler.group = true
 handler.botAdmin = true
