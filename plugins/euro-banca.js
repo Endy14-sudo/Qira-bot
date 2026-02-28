@@ -352,7 +352,7 @@ const BankCard = ({ user, name, pfpUrl }) => {
                         )
                     )
                 ),
-                React.createElement('div', { className: 'footer' }, '🔒 VareBot Banking System')
+                React.createElement('div', { className: 'footer' }, '🔒 ZeynoBot Banking System')
             )
         )
     );
@@ -412,7 +412,7 @@ let handler = async (m, { conn, usedPrefix }) => {
             pfpUrl
         });
         const caption = `
- ⋆｡˚『 ╭ \`BANCA VAREBOT\` ╯ 』˚｡⋆\n╭\n│
+ ⋆｡˚『 ╭ \`BANCA ZEYNOBOT\` ╯ 』˚｡⋆\n╭\n│
 │ 『 👤 』 \`Nome:\` ${name}
 │ 『 🍥 』 \`Utente:\` @${who.split('@')[0]}
 │
@@ -445,7 +445,7 @@ let handler = async (m, { conn, usedPrefix }) => {
         }, { quoted: m });
         
     } catch (error) {
-        let txt = ` ⋆｡˚『 ╭ \`BANCA VAREBOT\` ╯ 』˚｡⋆\n╭\n│
+        let txt = ` ⋆｡˚『 ╭ \`BANCA ZEYNOBOT\` ╯ 』˚｡⋆\n╭\n│
 │ 『 👤 』 \`Nome:\` ${name}
 │ 『 🍥 』 \`Utente:\` @${who.split('@')[0]}
 │
