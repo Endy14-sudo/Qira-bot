@@ -19,7 +19,7 @@ setInterval(() => {
     profilePicCache.clear();
 }, CACHE_TTL);
 
-const DEFAULT_AVATAR_URL = 'https://i.ibb.co/BKHtdBNp/default-avatar-profile-icon-1280x1280.jpg';
+const DEFAULT_AVATAR_URL = 'https://ibb.co/hFhH44MP/default-avatar-profile-icon-1280x1280.jpg';
 let defaultAvatarBuffer = null;
 let puppeteer = null;
 let browser = null;
