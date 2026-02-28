@@ -45,8 +45,8 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
           }
           
           if (typeof out === 'string') {
-            const packName = global.authsticker || '✧˚🩸 varebot 🕊️˚✧';
-            const authorName = global.nomepack || '✧˚🩸 varebot 🕊️˚✧';
+            const packName = global.authsticker || '✧˚🩸 𝐙𝚬𝑌𝐍𝟎 𝐁𝐎𝐓 🕊️˚✧';
+            const authorName = global.nomepack || '✧˚🩸 𝐙𝚬𝑌𝐍𝟎 𝐁𝐎𝐓 🕊️˚✧';
             stiker = await sticker(false, out, packName, authorName);
           }
         } catch (uploadError) {
@@ -56,8 +56,8 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       }
     } else if (args[0]) {
       if (isUrl(args[0])) {
-        const packName = global.authsticker || '✧˚🩸 varebot 🕊️˚✧';
-        const authorName = global.nomepack || '✧˚🩸 varebot 🕊️˚✧';
+        const packName = global.authsticker || '✧˚🩸 𝐙𝚬𝑌𝐍𝟎 𝐁𝐎𝐓 🕊️˚✧';
+        const authorName = global.nomepack || '✧˚🩸 𝐙𝚬𝑌𝐍𝟎 𝐁𝐎𝐓 🕊️˚✧';
         if (!global.support) {
           global.support = {
             ffmpeg: true,
