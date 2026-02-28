@@ -1,4 +1,4 @@
-// .richieste by Kinderino × chatunity 
+// !richieste by Endy x ZeynoBot 
 let richiestaInAttesa = {};
 
 let handler = async (m, { conn, isAdmin, isBotAdmin, args, usedPrefix, command }) => {
