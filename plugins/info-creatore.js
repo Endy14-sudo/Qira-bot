@@ -2,18 +2,18 @@ let handler = async (m, { conn }) => {
     try {
         let username = await conn.getName(m.sender)
         let samakavare = `ㅤㅤ⋆｡˚『 ╭ \`CREATORE\` ╯ 』˚｡⋆\n╭\n`
-        samakavare += `『 👋 』 *Hey ${username}!*\n`
+        endy += `『 👋 』 *Hey ${username}!*\n`
         samakavare += `- \`Ecco tutte le informazioni  per contattarmi:\`\n\n`
-        samakavare += `『 📌 』 _*CONTATTI:*_\n`
-        samakavare += `┌─⭓ \`Nome:\`\n  *˙⋆✮*     *Sam aka Vare*\n`
-        samakavare += `├─⭓ \`Numero:\`\n  *˙⋆✮*     *wa.me/393476686131*\n`
-        samakavare += `├─⭓ \`Email:\`\n  *˙⋆✮*     *samakavare1@gmail.com*\n`
-        samakavare += `├─⭓ \`Instagram:\`\n  *˙⋆✮*     *samakavare*\n`
-        samakavare += `├─⭓ \`GitHub:\`\n  *˙⋆✮*     *realvare*`
+        endy += `『 📌 』 _*CONTATTI:*_\n`
+        samakavare += `┌─⭓ \`Nome:\`\n  *˙⋆✮*     *Endy Aka Zeyno*\n`
+        endy += `├─⭓ \`Numero:\`\n  *˙⋆✮*     *wa.me/212679283897*\n`
+        samakavare += `├─⭓ \`Email:\`\n  *˙⋆✮*     *3ndyq1111@gmail.com*\n`
+        endy += `├─⭓ \`Instagram:\`\n  *˙⋆✮*     *endy*\n`
+        endy += `├─⭓ \`GitHub:\`\n  *˙⋆✮*     *endy*`
 
         const creatorCard = {
             image: { url: 'https://i.ibb.co/B29rgfjZ/sam.png' },
-            body: samakavare,
+            body: endy,
             footer: '',
             buttons: [
                 {
@@ -27,7 +27,7 @@ let handler = async (m, { conn }) => {
                     name: 'cta_url',
                     buttonParamsJson: JSON.stringify({
                         display_text: '💬 WhatsApp',
-                        url: 'https://wa.me/393476686131'
+                        url: 'https://wa.me/212679283897'
                     })
                 },
                 {
@@ -41,7 +41,7 @@ let handler = async (m, { conn }) => {
                     name: 'cta_url',
                     buttonParamsJson: JSON.stringify({
                         display_text: '📧 Email',
-                        url: 'mailto:samakavare1@gmail.com'
+                        url: 'mailto:3ndyq1111@gmail.com'
                     })
                 },
             ]
@@ -50,7 +50,7 @@ let handler = async (m, { conn }) => {
         await conn.sendMessage(
             m.chat,
             {
-                text: `ㅤ⋆｡˚『 ╭ \`𝘾𝙍𝙀𝘼𝙏𝙊𝙍𝙀\` ╯ 』˚｡⋆\n╭\n│ 『 👨‍💻 』 \`Sviluppatore:\` \n│ ➤  _*Sam aka Vare*_\n*╰⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*`,
+                text: `ㅤ⋆｡˚『 ╭ \`𝘾𝙍𝙀𝘼𝙏𝙊𝙍𝙀\` ╯ 』˚｡⋆\n╭\n│ 『 👨‍💻 』 \`Sviluppatore:\` \n│ ➤  _*Endy Aka zeyno*_\n*╰⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*`,
                 footer: '',
                 cards: [creatorCard]
             },
@@ -61,15 +61,15 @@ let handler = async (m, { conn }) => {
         
         try {
             let username = await conn.getName(m.sender)
-            let samakavare = `ㅤㅤ⋆｡˚『 ╭ \`CREATORE\` ╯ 』˚｡⋆\n╭\n`
-            samakavare += `『 👋 』 *Hey ${username}!*\n`
-            samakavare += `- \`Ecco tutte le mie info per contattarmi:\`\n\n`
-            samakavare += `『 📌 』 _*CONTATTI:*_\n`
-            samakavare += `┌─⭓ \`Nome:\`\n  *˙⋆✮*     *Sam aka Vare*\n`
-            samakavare += `├─⭓ \`Numero:\`\n  *˙⋆✮*     *wa.me/393476686131*\n`
-            samakavare += `├─⭓ \`Email:\`\n  *˙⋆✮*     *samakavare1@gmail.com*\n`
-            samakavare += `├─⭓ \`Instagram:\`\n  *˙⋆✮*     *samakavare*\n`
-            samakavare += `├─⭓ \`GitHub:\`\n  *˙⋆✮*     *realvare*`
+            let endy = `ㅤㅤ⋆｡˚『 ╭ \`CREATORE\` ╯ 』˚｡⋆\n╭\n`
+            endy += `『 👋 』 *Hey ${username}!*\n`
+            endy += `- \`Ecco tutte le mie info per contattarmi:\`\n\n`
+            endy += `『 📌 』 _*CONTATTI:*_\n`
+            endy += `┌─⭓ \`Nome:\`\n  *˙⋆✮*     *endy aka zeyno*\n`
+            samakavare += `├─⭓ \`Numero:\`\n  *˙⋆✮*     *wa.me/212679283897*\n`
+            endy += `├─⭓ \`Email:\`\n  *˙⋆✮*     *3ndyq1111@gmail.com*\n`
+            endy += `├─⭓ \`Instagram:\`\n  *˙⋆✮*     *endy*\n`
+            endy += `├─⭓ \`GitHub:\`\n  *˙⋆✮*     *Qira-bot*`
             
             const buttons = [
                 {
@@ -83,7 +83,7 @@ let handler = async (m, { conn }) => {
                     name: 'cta_url',
                     buttonParamsJson: JSON.stringify({
                         display_text: '『 📱 』 WhatsApp',
-                        url: 'https://wa.me/393476686131'
+                        url: 'https://wa.me/212679283897'
                     })
                 },
                 {
@@ -97,7 +97,7 @@ let handler = async (m, { conn }) => {
                     name: 'cta_url',
                     buttonParamsJson: JSON.stringify({
                         display_text: '『 📧 』 Email',
-                        url: 'mailto:samakavare1@gmail.com'
+                        url: 'mailto: 3ndyq1111@gmail.com'
                     })
                 }
             ]
