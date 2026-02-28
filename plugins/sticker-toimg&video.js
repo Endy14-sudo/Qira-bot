@@ -16,7 +16,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
             await conn.sendFile(m.chat, out, 'out.png', '> \`vare ✧ bot\`', m);
         } else if (/tovideo|convertivideo|video|tovid/i.test(command)) {
             let out = await webp2mp4(media);
-            await conn.sendFile(m.chat, out, 'out.mp4', '> \`vare ✧ bot\`', m);
+            await conn.sendFile(m.chat, out, 'out.mp4', '> \`𝐙𝚬𝑌𝐍𝟎 𝐁𝐎𝐓\`', m);
         }
     } catch (e) {
         console.error(e)
