@@ -67,8 +67,8 @@ ${statoFunzioni}
     contextInfo: {
       ...global.fake.contextInfo,
       externalAdReply: {
-        title: '      ✧･ﾟ: *✧･ﾟ:* 𝓥𝓪𝓻𝓮𝓫𝓸𝓽 *:･ﾟ✧*:･ﾟ✧',
-        body: `                         ʙʏ · ѕαм ✦`,
+        title: '      ✧･ﾟ: *✧･ﾟ:* 𝐙𝚬𝑌𝐍𝟎 𝐁𝐎𝐓 *:･ﾟ✧*:･ﾟ✧',
+        body: `                         ʙʏ · ℰ𝓃𝒹𝓎 ✦`,
         thumbnailUrl: pp,
         sourceUrl: "https://varebot.com", 
         mediaType: 1,
