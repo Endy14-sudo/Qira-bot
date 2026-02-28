@@ -67,7 +67,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 │ \`Risultato:\` *${verdict}*
 │ \`Probabilità:\` *${(aiScore * 100).toFixed(1)}%*
 │
-╰ㅤ⋆｡˚『 𝐯𝐚𝐫𝐞 ✧ 𝐛𝐨𝐭 』˚｡⋆
+╰ㅤ⋆｡˚『 𝐙𝚬𝑌𝐍𝟎 𝐁𝐎𝐓 』˚｡⋆
         `.trim()
         await conn.sendMessage(m.chat, { image: medAIBuffer, caption }, { quoted: m })
     } catch (e) {
