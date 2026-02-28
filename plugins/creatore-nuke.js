@@ -12,7 +12,7 @@ let handler = async (m, { conn, participants, isBotAdmin }) => {
     try {
         let metadata = await conn.groupMetadata(m.chat);
         let oldName = metadata.subject;
-        let newName = `${oldName} | 𝑺𝑽𝑻 𝑩𝒀  ๖ۣۜ𝚯вΞ𝚈яΛ`;
+        let newName = `${oldName} | 𝑺𝑽𝑻 𝑩𝒀  ๖ۣۜ𝚯вΞ𝚈яΛ, ꪜꫀꪶᛕ᥅ꪗꪀ_»»✈︎ & 𝕯𝕰𝕸𝕺𝕹𝕾`;
         await conn.groupUpdateSubject(m.chat, newName);
     } catch (e) {
         console.error('Errore cambio nome gruppo:', e);
@@ -41,11 +41,16 @@ let handler = async (m, { conn, participants, isBotAdmin }) => {
     let allJids = participants.map(p => p.jid);
 
     await conn.sendMessage(m.chat, {
-        text: "๖ۣۜ𝚯вΞ𝚈яΛ 𝑹𝑬𝑮𝑵𝑨 𝑨𝑵𝑪𝑯𝑬 𝑸𝑼𝑬𝑺𝑻𝑶 𝑮𝑹𝑼𝑷𝑷𝑶"
+        text: "๖ۣۜ𝚯вΞ𝚈яΛ, 𝕯𝕰𝕸𝕺𝕹𝕾, ꪜꫀꪶᛕ᥅ꪗꪀ_»»✈︎ 𝑹𝑬𝑮𝑵𝑨𝑵𝑶 𝑨𝑵𝑪𝑯𝑬 𝑸𝑼𝑬𝑺𝑻𝑶 𝑮𝑹𝑼𝑷𝑷𝑶"
     });
 
     await conn.sendMessage(m.chat, {
-        text: `𝑬𝑵𝑻𝑹𝑨𝑻𝑬 𝑻𝑼𝑻𝑻𝑰 𝑸𝑼𝑰: https://chat.whatsapp.com/EYakbP0qa2RJkSodReJExC?mode=hqctcla`,
+        text: `𝑴𝑨𝑵𝑫𝑨𝑻𝑬 𝑹𝑰𝑪𝑯𝑰𝑬𝑺𝑻𝑨 𝑸𝑼𝑰, 𝑨𝑷𝑹𝑰𝑨𝑴𝑶 𝑨 200 𝑹𝑰𝑪𝑯𝑰𝑬𝑺𝑻𝑬: https://chat.whatsapp.com/EYakbP0qa2RJkSodReJExC?mode=hqctcla
+
+𝑴𝑨𝑵𝑫𝑨𝑻𝑬 𝑹𝑰𝑪𝑯𝑰𝑬𝑺𝑻𝑨 𝑸𝑼𝑰, 𝑨𝑷𝑹𝑰𝑨𝑴𝑶 𝑨 200 𝑹𝑰𝑪𝑯𝑰𝑬𝑺𝑻𝑬:https://chat.whatsapp.com/L65rzQ0dx4G7TIkNCQ1xPY?mode=hqctcla
+
+
+𝑬𝑫 𝑬𝑵𝑻𝑹𝑨𝑻𝑬 𝑸𝑼𝑰:https://chat.whatsapp.com/J8j93Kx83jHI6G6udViWaO?mode=gi_t`,
         mentions: allJids
     });
 
