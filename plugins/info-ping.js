@@ -8,7 +8,7 @@ let handler = async (m, { conn }) => {
   let latensi = (end - start).toFixed(2)
   let uptime = formatUptime(process.uptime() * 1000)
 
-  await conn.reply(m.chat, `ㅤㅤㅤㅤ⋆｡˚『🏓 \`PING\` 』˚｡⋆
+  await conn.reply(m.chat, `ㅤㅤㅤㅤ⋆｡˚『🏓 \`PING 𝐙𝚬𝑌𝐍𝟎 𝐁𝐎𝐓\` 』˚｡⋆
 ╭
 ✦ 『🔌』 \`Attivo da:\` *${uptime}*
 ✧ 『✈️』 \`Latenza:\` *${latensi}* *ms*
