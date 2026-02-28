@@ -106,7 +106,7 @@ let handler = async (m, { command, conn, isOwner }) => {
         `📧 *${account.email}*
 
 ` +
-        `📩 Usa *.mail* per vedere i messaggi ricevuti.
+        `📩 Usa *!mail* per vedere i messaggi ricevuti.
 ` +
         `🛠️ Usa *.resetmail* per resettare la mail (limiti variabili a seconda del tuo ruolo).`
       )
