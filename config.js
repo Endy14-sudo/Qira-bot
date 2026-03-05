@@ -12,14 +12,14 @@ global.owner = [
   ['212679283897', 'endy', true],
   ['12343764029', 'estreia', true],
   ['5511967898841', 'ksav', true],
-  ['212722652082', 'medalis', true],
+  ['212693877842', 'medalis', true],
   ['393926427789', 'cristian', true],
   ['393518077116', 'xyra', true],
   ['628999029018', 'drali', true],
   ['212786300182', 'gabry', true],
   ['212612902096', 'askey', true],
   ['212775270361', 'zyno', true],
-  ['212771384589', 'noxtra', true],
+  ['85253382438', 'noxtra', true],
   ['212684981952', 'ruben', true],
 
 ]
